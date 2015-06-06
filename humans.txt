@@ -1,0 +1,11 @@
+/* TEAM */
+Creator: Karl Lorey
+Contact: mail@[this domain]
+Twitter: karllorey
+Location: Karlsruhe, Germany
+
+/* SITE */
+Last update: 2015/06/06
+Standards: HTML5, CSS3
+Components: Bootstrap, Font Awesome, HTML5 Shiv, Modernizr, jQuery
+Software: Laravel
