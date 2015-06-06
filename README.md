@@ -1,5 +1,6 @@
 # Programmer Map
-Programmer Map allows you to find programmers, developers, and IT experts in every area and city worldwide. Find programmers, projects and trends near you!
+Programmer Map allows you to find programmers, developers, and IT experts in every area and city worldwide. 
+Find programmers, projects, and trends near you!
 
 ## Cities (preview)
 Currently, there are five cities available for preview:
@@ -10,4 +11,4 @@ Currently, there are five cities available for preview:
 * [Karlsruhe](http://programmermap.com/area/karlsruhe-germany)
 
 ## About
-This repository contains static files from programmermap.com
+This repository contains static files from programmermap.com. The site itself is created dynamically.
