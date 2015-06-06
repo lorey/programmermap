@@ -2,6 +2,8 @@
 Programmer Map allows you to find programmers, developers, and IT experts in every area and city worldwide. 
 Find programmers, projects, and trends near you!
 
+![Worldmap](http://programmermap.com/assets/img/programmermap_worldmap_bw.png)
+
 ## Cities (preview)
 Currently, there are five cities available for preview:
 * [San Francisco](http://programmermap.com/area/san-francisco-ca-usa)
