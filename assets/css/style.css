@@ -42,7 +42,6 @@ p {
 	font-weight: 400;
 	font-size: 14px; 
 	line-height: 24px;
-	color: #384452; 
 	margin-top: 10px; 
 }
 
@@ -205,6 +204,7 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
+    color: #ffffff;
 	background-color: #00b3fe;
 	padding-top: 100px;
 	padding-bottom: 30px;
