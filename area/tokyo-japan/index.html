@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+    <title>Programmers, developers, and tech talents in Tokyo, Japan</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Programmer Map</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">HOME</a></li>
+                <li><a href="/area">All cities and areas</a></li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        Examples <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/area/san-francisco-ca-usa">San Francisco, CA, USA</a></li>
+                        <li><a href="/area/new-york-ny-usa">New York, NY, USA</a></li>
+                        <li><a href="/area/london-uk">London, UK</a></li>
+                        <li><a href="/area/beijing-china">Beijing, China</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+<!-- *****************************************************************************************************************
+ HEADERWRAP
+ ***************************************************************************************************************** -->
+<div id="headerwrap" style="background-image:url('/assets/img/areas/tokyo-japan.jpg'); background-size:cover; background-position: center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1><small style="color:#ffffff">Find programmers in</small><br>Tokyo, Japan</h1>
+                <p style="line-height:110%">
+                    This is a map of programmers, developers, and IT influencers in Tokyo, Japan
+                    and nearby areas along with detailed insights and statistics about projects, languages, etc.<br><br>
+                                    </p>
+
+                <p class="lead">
+                    Don't miss the launch of the next city, it could be yours!<br>
+                </p>
+                <p>
+                    <button onClick="ga('send', 'event', { eventCategory: 'newsletter', eventAction: 'form', eventLabel: 'area.header'});" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                        Get notified!
+                    </button>
+                </p>
+            </div>
+            <div id="map_canvas" class="col-lg-5 col-lg-offset-1" style="height: 300px">
+
+            </div>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /headerwrap -->
+
+<!-- *****************************************************************************************************************
+ SERVICE LOGOS
+ ***************************************************************************************************************** -->
+<div>
+    <div class="container" style="margin-top: 50px">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="text-center">
+                    <i class="fa fa-street-view" style="font-size: 500%"></i>
+                    <h4>15 best programmers in Tokyo, Japan</h4>
+                </div>
+                <p>These are the 15 most influential programmers out of more than 250 programmers in Tokyo, Japan.
+                The following table contains a profile picture, name and username, as well as information about the preferred programming language and the most popular project.</p>
+                <table class="table">
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Language</th>
+                        <th>known for</th>
+                        <th>Score</th>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/318643095c83b914cf80a7f99f247fe6?s=25" alt="Profile picture of Wei Wang"></td>
+                        <td><a href="http://onev.cat" target="_blank">Wei Wang</a></td>
+                        <td><i class="fa fa-github"></i> onevcat</td>
+                        <td>Objective-C</td>
+                        <td>VVDocumenter-Xcode (<i class="fa fa-star"></i> 4109)</td>
+                        <td class="text-right">50</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/76a777ff80f30bd3b390e275cce625bc?s=25" alt="Profile picture of Akira Matsuda"></td>
+                        <td><a href="https://twitter.com/a_matsuda" target="_blank">Akira Matsuda</a></td>
+                        <td><i class="fa fa-github"></i> amatsuda</td>
+                        <td>Ruby</td>
+                        <td>kaminari (<i class="fa fa-star"></i> 4902)</td>
+                        <td class="text-right">39</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/b4afc7d853d7f1cb6a253d3c7183c05a?s=25" alt="Profile picture of Naoya Ito"></td>
+                        <td><a href="http://naoya.github.com/" target="_blank">Naoya Ito</a></td>
+                        <td><i class="fa fa-github"></i> naoya</td>
+                        <td>Perl</td>
+                        <td>HBFav2 (<i class="fa fa-star"></i> 153)</td>
+                        <td class="text-right">35</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/19d7ae634445d4bd9b10c7961a462260?s=25" alt="Profile picture of shu223"></td>
+                        <td><a href="http://d.hatena.ne.jp/shu223/" target="_blank">shu223</a></td>
+                        <td><i class="fa fa-github"></i> shu223</td>
+                        <td>Objective-C</td>
+                        <td>iOS7-Sampler (<i class="fa fa-star"></i> 2725)</td>
+                        <td class="text-right">32</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/0ec58a040e1e4e959c8566484b4bba19?s=25" alt="Profile picture of Yuichiro MASUI"></td>
+                        <td><a href="http://masuidrive.jp/" target="_blank">Yuichiro MASUI</a></td>
+                        <td><i class="fa fa-github"></i> masuidrive</td>
+                        <td>JavaScript</td>
+                        <td>open-wripe (<i class="fa fa-star"></i> 592)</td>
+                        <td class="text-right">32</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/9bf923e39671cde83584e3e926296c13?s=25" alt="Profile picture of kishikawa katsumi"></td>
+                        <td><a href="http://kishikawakatsumi.com" target="_blank">kishikawa katsumi</a></td>
+                        <td><i class="fa fa-github"></i> kishikawakatsumi</td>
+                        <td>Objective-C</td>
+                        <td>UICKeyChainStore (<i class="fa fa-star"></i> 1157)</td>
+                        <td class="text-right">31</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=25" alt="Profile picture of Tokuhiro Matsuno"></td>
+                        <td><a href="http://127.0.0.1/" target="_blank">Tokuhiro Matsuno</a></td>
+                        <td><i class="fa fa-github"></i> tokuhirom</td>
+                        <td>Perl</td>
+                        <td>plenv (<i class="fa fa-star"></i> 252)</td>
+                        <td class="text-right">30</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/6dd0483f1353a4a359e92633cfd65c64?s=25" alt="Profile picture of Daichi Furiya"></td>
+                        <td><a href="http://wasabeef.jp" target="_blank">Daichi Furiya</a></td>
+                        <td><i class="fa fa-github"></i> wasabeef</td>
+                        <td>Java</td>
+                        <td>awesome-android-ui (<i class="fa fa-star"></i> 6551)</td>
+                        <td class="text-right">30</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/a5d0a659c4e5cdf2cdb0d471acd566c2?s=25" alt="Profile picture of Kazuho Oku"></td>
+                        <td><a href="http://blog.kazuhooku.com/" target="_blank">Kazuho Oku</a></td>
+                        <td><i class="fa fa-github"></i> kazuho</td>
+                        <td>Perl</td>
+                        <td>picojson (<i class="fa fa-star"></i> 294)</td>
+                        <td class="text-right">29</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/c4f076f658dd3464f1d8785ad53a0d99?s=25" alt="Profile picture of Shota Fukumori"></td>
+                        <td><a href="http://sorah.jp/" target="_blank">Shota Fukumori</a></td>
+                        <td><i class="fa fa-github"></i> sorah</td>
+                        <td>Ruby</td>
+                        <td>mamiya (<i class="fa fa-star"></i> 347)</td>
+                        <td class="text-right">29</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=25" alt="Profile picture of Kana Natsuno"></td>
+                        <td><a href="http://whileimautomaton.net/" target="_blank">Kana Natsuno</a></td>
+                        <td><i class="fa fa-github"></i> kana</td>
+                        <td>VimL</td>
+                        <td>vim-textobj-user (<i class="fa fa-star"></i> 338)</td>
+                        <td class="text-right">28</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/9278c3a06b8d8752fb913dea93f959c1?s=25" alt="Profile picture of FUJI Goro (gfx)"></td>
+                        <td><a href="http://d.hatena.ne.jp/gfx/" target="_blank">FUJI Goro (gfx)</a></td>
+                        <td><i class="fa fa-github"></i> gfx</td>
+                        <td>Perl</td>
+                        <td>Swift-JsonSerializer (<i class="fa fa-star"></i> 77)</td>
+                        <td class="text-right">28</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/789795ca42959ab3305a55ec0c73d7e5?s=25" alt="Profile picture of Jessie Frazelle"></td>
+                        <td><a href="https://jessfraz.com" target="_blank">Jessie Frazelle</a></td>
+                        <td><i class="fa fa-github"></i> jfrazelle</td>
+                        <td>Go</td>
+                        <td>dockerfiles (<i class="fa fa-star"></i> 614)</td>
+                        <td class="text-right">28</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/f2748d34b03ed11330f2a2218904eb2d?s=25" alt="Profile picture of SHIBATA Hiroshi"></td>
+                        <td><a href="http://www.hsbt.org/diary/" target="_blank">SHIBATA Hiroshi</a></td>
+                        <td><i class="fa fa-github"></i> hsbt</td>
+                        <td>Ruby</td>
+                        <td>string-scrub (<i class="fa fa-star"></i> 76)</td>
+                        <td class="text-right">27</td>
+                    </tr>
+                                        <tr>
+                        <td><img src="http://www.gravatar.com/avatar/9f3a83db74bee75a64b5e6ed106a775c?s=25" alt="Profile picture of Takuto Wada"></td>
+                        <td><a href="http://tako3.com/http://github.com/twada" target="_blank">Takuto Wada</a></td>
+                        <td><i class="fa fa-github"></i> twada</td>
+                        <td>JavaScript</td>
+                        <td>qunit-tap (<i class="fa fa-star"></i> 68)</td>
+                        <td class="text-right">27</td>
+                    </tr>
+                                    </table>
+                <p>
+                    This list of programmers was gathered automatically and by hand via public sources (GitHub, Websites, Google, and so on).
+                    It only includes influential programmers and developers with a very high visibility on the net.
+                    If you are on this list and still would like to get excluded, just <a href="/humans.txt">drop me an email</a>.
+                </p>
+            </div>
+        </div>
+    </div><!--/container -->
+</div>
+
+<div>
+    <div class="container" style="margin-top: 50px; margin-bottom: 50px;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="fa fa-pie-chart" style="font-size: 500%"></i>
+                    <h4>Programming languages</h4>
+                </div>
+                <p>Programming language distribution compared to global distribution among the ten most common languages
+                    on GitHub.</p>
+                <table class="table table-condensed">
+                    <tr>
+                        <th>Language</th>
+                        <th class="text-center">Change</th>
+                    </tr>
+                                    <tr>
+                        <td>Ruby</td>
+                        <td class="text-right">+110%</td>
+                    </tr>
+                                    <tr>
+                        <td>Objective-C</td>
+                        <td class="text-right">+12%</td>
+                    </tr>
+                                    <tr>
+                        <td>Shell</td>
+                        <td class="text-right">-11%</td>
+                    </tr>
+                                    <tr>
+                        <td>C</td>
+                        <td class="text-right">-18%</td>
+                    </tr>
+                                    <tr>
+                        <td>C++</td>
+                        <td class="text-right">-22%</td>
+                    </tr>
+                                    <tr>
+                        <td>JavaScript</td>
+                        <td class="text-right">-27%</td>
+                    </tr>
+                                    <tr>
+                        <td>Java</td>
+                        <td class="text-right">-48%</td>
+                    </tr>
+                                    <tr>
+                        <td>PHP</td>
+                        <td class="text-right">-50%</td>
+                    </tr>
+                                    <tr>
+                        <td>CSS</td>
+                        <td class="text-right">-55%</td>
+                    </tr>
+                                    <tr>
+                        <td>Python</td>
+                        <td class="text-right">-65%</td>
+                    </tr>
+                                </table>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="fa fa-server" style="font-size: 500%"></i>
+                    <h4>Popular projects</h4>
+                </div>
+                <p>The most popular projects (by stars) of project maintainers in Tokyo, Japan are:</p>
+                                    <p>
+                        <a href="https://twitter.com/wasabeef_jp" target="_blank">awesome-android-ui</a><br>
+                        <small>by <i class="fa fa-github"></i> wasabeef written in an undetected language (<i class="fa fa-star"></i> 6551)</small>
+                    </p>
+                                    <p>
+                        <a href="https://github.com/amatsuda/kaminari/wiki" target="_blank">kaminari</a><br>
+                        <small>by <i class="fa fa-github"></i> amatsuda written in Ruby (<i class="fa fa-star"></i> 4902)</small>
+                    </p>
+                                    <p>
+                        <a href="https://github.com/cjwirth/awesome-ios-ui" target="_blank">awesome-ios-ui</a><br>
+                        <small>by <i class="fa fa-github"></i> cjwirth written in an undetected language (<i class="fa fa-star"></i> 4747)</small>
+                    </p>
+                                    <p>
+                        <a href="c3js.org" target="_blank">c3</a><br>
+                        <small>by <i class="fa fa-github"></i> masayuki0812 written in JavaScript (<i class="fa fa-star"></i> 4259)</small>
+                    </p>
+                                    <p>
+                        <a href="https://github.com/onevcat/VVDocumenter-Xcode" target="_blank">VVDocumenter-Xcode</a><br>
+                        <small>by <i class="fa fa-github"></i> onevcat written in Objective-C (<i class="fa fa-star"></i> 4109)</small>
+                    </p>
+                            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <i class="fa fa-suitcase" style="font-size: 500%"></i>
+                    <h4>Programmers for hire</h4>
+                </div>
+                <p>How many of these programmers are available for hire and how many currently have a job?</p>
+                <p class="lead">
+                    30%
+                    <small>are hireable</small>
+                </p>
+                <p class="lead">
+                    69%
+                    <small>are not hireable</small>
+                </p>
+            </div>
+        </div>
+    </div><!--/container -->
+    <div style="margin-bottom: 50px;" class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1">
+                <div class="text-center">
+                    <i class="fa fa-map-marker" style="font-size: 500%"></i>
+                    <h4>Areas and cities nearby</h4>
+                </div>
+                <p>Nearby areas or cities (with enough developers) ordered by distance.*</p>
+                <p><small>* Please note that this currently only includes the ten other cities available in the preview.</small></p>
+                <ol>
+                                            <li><a href="/area/seoul-south-korea">Seoul, South Korea</a> (1,156km)</li>
+                                            <li><a href="/area/beijing-china">Beijing, China</a> (2,095km)</li>
+                                            <li><a href="/area/jakarta-indonesia">Jakarta, Special Capital Region of Jakarta, Indonesia</a> (5,790km)</li>
+                                            <li><a href="/area/moscow-russia">Moscow, Russia</a> (7,479km)</li>
+                                            <li><a href="/area/san-francisco-ca-usa">San Francisco, CA, USA</a> (8,266km)</li>
+                                    </ol>
+            </div>
+            <div class="col-md-4 col-md-offset-2">
+                <div class="text-center">
+                    <i class="fa fa-envelope" style="font-size: 500%"></i>
+                    <h4>Get notified</h4>
+                    <p>
+                        Subscribe to the newsletter that informs you of new available cities and features on Programmer Map.
+                    </p>
+                    <p>
+                        Don't miss your chance and be the first to get notified.
+                    </p>
+                    <p>
+                        <button onClick="ga('send', 'event', { eventCategory: 'newsletter', eventAction: 'form', eventLabel: 'area.bottom'});" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                            I want to get notified!
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="text-center">
+                    <i class="fa fa-comment" style="font-size: 500%"></i>
+                    <h4>What do you think?</h4>
+                    <p>
+                        What do you think of the programmers and projects in Tokyo, Japan and working there?
+                    </p>
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        /* * * CONFIGURATION VARIABLES * * */
+                        var disqus_shortname = 'programmermap';
+                        var disqus_title = 'What do you think of the programmers and projects in Tokyo, Japan and working there?';
+
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="twrap">
+    <div class="container centered">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <i class="fa fa-comment-o"></i>
+                <p>"Our aim with Programmer Map is to simplify the search for other like-minded programmers. As a
+                    programmer myself, I was always interested to see what's going on in my hometown - Karlsruhe, Germany.
+                    Programmer Map helps me to do this: Find other local developers in my area working on interesting projects
+                    and connect with them."</p>
+                <h4><br>Karl Lorey</h4>
+                <p>Creator - PROGRAMMERMAP.COM</p>
+            </div>
+        </div><!-- --/row ---->
+    </div><!-- --/container ---->
+</div>
+
+<!-- *****************************************************************************************************************
+ FOOTER
+ ***************************************************************************************************************** -->
+<div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>About</h4>
+                <div class="hline-w"></div>
+                <p>Programmer Map allows you to find programmers, developers, and IT experts in every area and city worldwide. Find programmers, projects, and trends near you!</p>
+            </div>
+            <div class="col-lg-4">
+                <h4>Social Links</h4>
+                <div class="hline-w"></div>
+                <p>
+                    <a href="http://www.karllorey.de"><i class="fa fa-globe"></i></a>
+                    <a href="https://twitter.com/karllorey"><i class="fa fa-twitter"></i></a>
+                    <a href="https://github.com/lorey"><i class="fa fa-github"></i></a>
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <h4>Made with &hearts; in Karlsruhe, Germany</h4>
+                <div class="hline-w"></div>
+                <p>
+                    Programmer Map is a personal side project of Karl Lorey, student at the Karlsruhe Institute of Technology. Spread the word, <a href="/humans.txt">send feedback, or just say "hi"</a> :)
+                </p>
+            </div>
+
+        </div><!--/row -->
+    </div><!--/container -->
+</div><!--/footerwrap -->
+<!-- *****************************************************************************************************************
+ Subscription Modal Window
+ ***************************************************************************************************************** -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form action="https://programmermap.us10.list-manage.com/subscribe/post?u=31cfc834a8fe271269aff7b06&amp;id=35cfcf4826" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Subscribe to our mailing list!</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-info">Want to get notified when we add new cities or launch new features? Subscribe to our mailing list.</div>
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup">
+                        <div id="mc_embed_signup_scroll">
+                            <div class="form-group">
+                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL">
+                            </div>
+                            <div class="form-group">
+                                <label for="mce-FNAME">First Name </label>
+                                <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
+                            </div>
+                            <div class="form-group">
+                                <label for="mce-LNAME">Last Name </label>
+                                <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_31cfc834a8fe271269aff7b06_35cfcf4826" tabindex="-1" value=""></div>
+                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                        </div>
+                    </div>
+
+                    <!--End mc_embed_signup-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <input onClick="ga('send', 'event', { eventCategory: 'newsletter', eventAction: 'registration'});" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/retina-1.1.0.js"></script>
+<script src="/assets/js/jquery.hoverdir.js"></script>
+<script src="/assets/js/jquery.hoverex.min.js"></script>
+<script src="/assets/js/jquery.prettyPhoto.js"></script>
+<script src="/assets/js/jquery.isotope.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-63875885-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script>
+<script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer_compiled.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    function init() {
+        initializeMaps();
+    }
+    window.onload = init;
+
+    var data = {
+        "markers":
+        [{"center_lat":"35.5309058","center_lon":"139.7030511"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7406339","center_lon":"139.6800707"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7020691","center_lon":"139.7753269"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6641222","center_lon":"139.729426"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6640352","center_lon":"139.6982122"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6640352","center_lon":"139.6982122"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6640352","center_lon":"139.6982122"},{"center_lat":"35.6640352","center_lon":"139.6982122"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6414629","center_lon":"139.6981712"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7118881","center_lon":"139.796686"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7020691","center_lon":"139.7753269"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6938401","center_lon":"139.7035494"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6885347","center_lon":"139.8947838"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6092261","center_lon":"139.7301861"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6640352","center_lon":"139.6982122"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6414629","center_lon":"139.6981712"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6640352","center_lon":"139.6982122"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6641222","center_lon":"139.729426"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6414629","center_lon":"139.6981712"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.6894875","center_lon":"139.6917064"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"},{"center_lat":"35.7090259","center_lon":"139.7319925"}]    };
+
+    function initializeMaps() {
+        var myOptions = {
+            zoom: 6,
+            maxZoom: 12,
+            center: new google.maps.LatLng(35.7090259, 139.7319925)
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+        var mc = new MarkerClusterer(map);
+        var i;
+        for (i = 0; i < data.markers.length; i++) {
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(data.markers[i].center_lat, data.markers[i].center_lon),
+                map: map
+            });
+
+            mc.addMarker(marker);
+        }
+
+        var bounds = new google.maps.LatLngBounds(
+                new google.maps.LatLng(35.5208632, 139.5629047),
+                new google.maps.LatLng(35.8175168, 139.9198562)
+        );
+        map.fitBounds(bounds);
+    }
+</script>
+
+
+</body>
+</html>

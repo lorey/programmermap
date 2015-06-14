@@ -40,17 +40,16 @@
         <div class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">HOME</a></li>
+                <li><a href="/area">All cities and areas</a></li>
                 <li role="presentation" class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                        Cities <span class="caret"></span>
+                        Examples <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/area/san-francisco-ca-usa">San Francisco, CA, USA</a></li>
                         <li><a href="/area/new-york-ny-usa">New York, NY, USA</a></li>
+                        <li><a href="/area/london-uk">London, UK</a></li>
                         <li><a href="/area/beijing-china">Beijing, China</a></li>
-                        <li><a href="/area/sao-paulo-state-of-sao-paulo-brazil">São Paulo - State of São Paulo, Brazil</a></li>
-                        <li><a href="/area/berlin-germany">Berlin, Germany</a></li>
-                        <li><a href="/area/karlsruhe-germany">Karlsruhe, Germany</a></li>
                     </ul>
                 </li>
             </ul>
@@ -69,9 +68,11 @@
                     detailed insights and statistics about projects, languages, etc.</p>
 
                 <h3>Don't miss new cities and features!</h3>
-                <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                <p>
+                    <button onClick="ga('send', 'event', { eventCategory: 'newsletter', eventAction: 'form', eventLabel: 'landingpage.header'});" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
                         Subscribe
-                    </button></p>
+                    </button>
+                </p>
             </div>
             <div class="col-lg-5 col-lg-offset-1 himg">
                 <img alt="World map of programmers" src="assets/img/programmermap_worldmap_bw.png" class="img-responsive">
@@ -151,7 +152,7 @@
                 <h4>Made with &hearts; in Karlsruhe, Germany</h4>
                 <div class="hline-w"></div>
                 <p>
-                    Programmer Map is a personal side project of Karl Lorey, student at the Karlsruhe Institute of Technology. Spread the word, send feedback, or just say "hi" :)
+                    Programmer Map is a personal side project of Karl Lorey, student at the Karlsruhe Institute of Technology. Spread the word, <a href="/humans.txt">send feedback, or just say "hi"</a> :)
                 </p>
             </div>
 
@@ -200,7 +201,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+                    <input onClick="ga('send', 'event', { eventCategory: 'newsletter', eventAction: 'registration'});" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
                 </div>
             </div>
         </form>
